@@ -2455,7 +2455,7 @@ li:hover .topbar__info__icon {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: var(--taxiz-black, #141414);
+  /* background-color: var(--taxiz-black, #141414); */
 }
 @media (max-width: 1299px) {
   .main-header__right__inner__bg {
@@ -2500,10 +2500,10 @@ li:hover .topbar__info__icon {
 .main-header__call__number {
   font-family: var(--taxiz-heading-font, "Lexend", serif);
   font-size: 24px;
-  color: var(--taxiz-white, #FFFFFF);
+  color: var(--taxiz-black, #141414);
   line-height: 1;
   font-weight: 600;
-  background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
+  /* background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat; */
   transition: all 500ms ease;
 }
 .main-header__call__number:hover {
