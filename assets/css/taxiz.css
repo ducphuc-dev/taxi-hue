@@ -75,6 +75,12 @@
   --section-space2: 118px;
 }
 
+@keyframes moveToolbox {
+  0% { left: -345;}
+  50% { left: -245;}
+  100% { left: -145;}
+}
+
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
@@ -15451,3 +15457,82 @@ body.boxed-wrapper .about-one__shape {
   }
 }
 /*# sourceMappingURL=taxiz.css.map */
+
+.side-toolbox {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  color: #000;
+  z-index: 9999999999;
+  transform: translateY(-50%);
+}
+
+.tb-item {
+  padding: 15px;
+  background-color: #FFF;
+  border: 1px solid #FFF;
+  display: block;
+  color: #000;
+  position: relative;
+}
+
+.tb-item:hover {
+  background-color: #000;
+  color: var(--taxiz-base, #FED100);
+  /* transition: all 100ms ease; */
+  border-color: #000;
+}
+
+@media (max-width: 575px) {
+  .tb-item {
+    padding: 10px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .tb-item {
+    padding: 8px !important;
+  }
+}
+
+/* .tb-item::before {
+	width: 150px;
+	display: inline-block;
+	position: absolute;
+	left: -345px;
+	z-index: 9999999!important;
+	text-align: center;
+	padding: 15px 0px;
+  top: 0px;
+	color: #000;
+  border: 1px solid #fff;
+  animation: moveToolbox 10s alternate!important;
+}
+
+.tb-item.tb-phone::before {
+  background-color: #fff;
+  content: 'Gọi ngay'
+}
+
+.tb-item.tb-fb::before {
+  background-color: #fff;
+  content: 'Messenger'
+}
+
+.tb-item.tb-zalo::before {
+  background-color: #fff;
+  content: 'Zalo'
+}
+
+.tb-item:hover::before {
+	animation: linear alternate!important;
+  animation-name: moveToolbox;
+	animation-duration: 10s!important;
+	animation-fill-mode: forwards;
+	left: -145px;
+  background-color: #000;
+  color: var(--taxiz-base, #FED100);
+  border: 1px solid #000;
+} */
+
+
