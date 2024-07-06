@@ -15548,4 +15548,10 @@ body.boxed-wrapper .about-one__shape {
   color: var(--bs-cyan);
 }
 
+.data-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
