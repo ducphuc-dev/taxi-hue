@@ -9177,7 +9177,15 @@ li:hover .sidebar__comments__icon {
   margin-bottom: 20px;
   letter-spacing: var(--taxiz-letter-space, -0.03em);
   text-transform: capitalize;
+  font-weight: bold;
+  color: var(--bs-cyan);
 }
+
+.no-margin-y {
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+}
+
 .taxi-card__list {
   margin-bottom: 30px;
   padding-top: 21px;
@@ -15534,5 +15542,10 @@ body.boxed-wrapper .about-one__shape {
   color: var(--taxiz-base, #FED100);
   border: 1px solid #000;
 } */
+
+.text-cyan-bold {
+  font-weight: bold;
+  color: var(--bs-cyan);
+}
 
 
