@@ -15503,6 +15503,12 @@ body.boxed-wrapper .about-one__shape {
   }
 }
 
+@media (max-width: 965px) {
+  .taxi-booking__bg {
+    min-height: 180px!important;
+  }
+}
+
 /* .tb-item::before {
 	width: 150px;
 	display: inline-block;
